@@ -1,0 +1,47 @@
+body {
+    background-image: url(imagens/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Tamanho dos mosquitos do jogo*/
+.mosquito1 {
+    width: 70px;
+    height: 70px;
+}
+
+.mosquito2 {
+    width: 100px;
+    height: 100px;
+}
+
+.mosquito3 {
+    width: 25px;
+    height: 25px;
+}
+/* Dados de vida e tempo*/
+
+.painel {
+    position: absolute;
+    width: 190px;
+    padding: 10px;
+    left: 0px;
+    bottom: 0px;
+    border-top: solid 1px #FFF;
+    background-color: #FFF;
+    opacity: 0.7;
+}
+
+.vidas {
+    float: left;
+}
+
+.cronometro {
+    float: left;
+    font-size: 20px;
+    font-weight: bold;    
+}
+
+html {
+    cursor: url(imagens/mata_mosca.png) 30 30, auto ;
+}

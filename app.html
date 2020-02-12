@@ -1,0 +1,39 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>App - Mata Mosquito</title>
+
+        <link rel="stylesheet" href="estilo.css"/>
+        <script src="jogo.js"></script>
+    
+    </head>
+    <body onresize="ajustarTamanhoJanela()">
+            
+        <div class="painel">
+
+            <div class="vidas">
+                <img id="v1" src="imagens/coracao_cheio.png" />
+                <img id="v2" src="imagens/coracao_cheio.png" />
+                <img id="v3" src="imagens/coracao_cheio.png" />
+            </div>
+            
+            <div class="cronometro">
+
+                <span id="resultado"></span>
+
+            </div>
+
+        </div>
+
+        <script>
+            document.getElementById('resultado').innerHTML = "Tempo restante: " + tempo + " acertos: " + acerto
+            //cria um intervalo de tempo por exemplo setInterval( <ação> , tempo em milisegundos)   
+            let criaMosca = setInterval(function(){
+                    positionRandom()
+                }, criaMosquito)
+                
+        </script>
+    </body>
+</html>
